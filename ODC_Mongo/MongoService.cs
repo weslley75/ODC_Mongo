@@ -48,13 +48,38 @@ namespace MongoDB_ODC
             return collection.CountDocuments(new BsonDocument());
         }
 
-        public List<BsonDocument> AggregateCollection(string collectionName, IEnumerable<BsonDocument> pipeline)
+        //public List<BsonDocument> AggregateCollection(string collectionName, IEnumerable<BsonDocument> pipeline)
+        //{
+        //    var collection = GetCollection(collectionName);
+        //    return collection.Aggregate<BsonDocument>((PipelineDefinition<BsonDocument, BsonDocument>)pipeline).ToList();
+        //}
+
+        public List<BsonDocument> AggregateCollection(string collectionName, IEnumerable<BsonDocument> pipelineDocuments)
         {
-            var collection = GetCollection(collectionName);
-            return collection.Aggregate<BsonDocument>((PipelineDefinition<BsonDocument, BsonDocument>)pipeline).ToList();
+            var collection = _database.GetCollection<BsonDocument>(collectionName);
+
+            try
+            {
+                // Iniciando o Aggregate Fluent
+                var fluent = collection.Aggregate();
+
+                // Aplicando cada estágio do pipeline
+                foreach (var stage in pipelineDocuments)
+                {
+                    fluent = fluent.AppendStage<BsonDocument>(stage);
+                }
+
+                // Executando a agregação
+                var results = fluent.ToList();
+
+                Console.WriteLine($"Documentos agregados fluentemente: {results.Count}");
+                return results;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro durante a agregação fluent: {ex.Message}");
+                return new List<BsonDocument>(); // Retorna lista vazia ou gerencia o erro conforme necessário
+            }
         }
-
-
-        
-    }
+}
 }

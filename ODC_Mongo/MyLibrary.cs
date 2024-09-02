@@ -67,6 +67,7 @@ namespace MongoDB_ODC
         public string AggregateCollection(string collectionName, string connectionString, string databaseName, string aggregatePipeline)
         {
             var mongoService = new MongoService(connectionString, databaseName);
+            Console.WriteLine($"Verificando se a coleção existe: {collectionName}");
 
             if (!mongoService.CollectionExists(collectionName))
             {
