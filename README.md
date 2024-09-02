@@ -1,6 +1,6 @@
 # MongoDB Integration Module for OutSystems
 
-This module provides an integration between OutSystems and MongoDB, enabling developers to perform CRUD (Create, Read, Update, Delete) operations from within an OutSystems application. It simplifies the interaction with MongoDB databases by providing a ready-to-use interface and server actions.
+This module provides an integration between OutSystems and MongoDB, enabling developers to perform CRUD (Create, Read, Update, Delete, and Aggregate) operations from within an OutSystems application. It simplifies the interaction with MongoDB databases by providing a ready-to-use interface and server actions.
 
 ## Features
 
