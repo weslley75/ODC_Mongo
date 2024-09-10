@@ -1,0 +1,22 @@
+/Users/ielo/Library/Mobile Documents/com~apple~CloudDocs/Dev/Forge/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.csproj.AssemblyReference.cache
+/Users/ielo/Library/Mobile Documents/com~apple~CloudDocs/Dev/Forge/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.Resources.resources
+/Users/ielo/Library/Mobile Documents/com~apple~CloudDocs/Dev/Forge/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.csproj.GenerateResource.cache
+/Users/ielo/Library/Mobile Documents/com~apple~CloudDocs/Dev/Forge/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ielo/Library/Mobile Documents/com~apple~CloudDocs/Dev/Forge/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.AssemblyInfoInputs.cache
+/Users/ielo/Library/Mobile Documents/com~apple~CloudDocs/Dev/Forge/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.AssemblyInfo.cs
+/Users/ielo/Library/Mobile Documents/com~apple~CloudDocs/Dev/Forge/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.csproj.CoreCompileInputs.cache
+/Users/ielo/dev/ODC_Mongo/bin/Debug/net6.0/resources/mongodb.ico
+/Users/ielo/dev/ODC_Mongo/bin/Debug/net6.0/ODC_Mongo.deps.json
+/Users/ielo/dev/ODC_Mongo/bin/Debug/net6.0/ODC_Mongo.dll
+/Users/ielo/dev/ODC_Mongo/bin/Debug/net6.0/ODC_Mongo.pdb
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.csproj.AssemblyReference.cache
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.Resources.resources
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.csproj.GenerateResource.cache
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.AssemblyInfoInputs.cache
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.AssemblyInfo.cs
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.csproj.CoreCompileInputs.cache
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.dll
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/refint/ODC_Mongo.dll
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ODC_Mongo.pdb
+/Users/ielo/dev/ODC_Mongo/obj/Debug/net6.0/ref/ODC_Mongo.dll
