@@ -104,7 +104,7 @@ namespace MongoDB_ODC
         }
 
         [OSAction(Description = "Update documents from the specified collection.")]
-        public void UpdateDocument(string collectionName, string filterJson, string updateJson, string databaseName, string connectionString )
+        public void UpdateDocument(string collectionName, string filterJson, string updateJson, string connectionString, string databaseName )
         {
             _handler = new MongoDBHandler(connectionString, databaseName);
             _handler.UpdateDocument(collectionName, filterJson, updateJson);
