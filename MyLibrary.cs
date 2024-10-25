@@ -56,8 +56,7 @@ namespace MongoDB_ODC
             var bsonList = collection.Find(new BsonDocument()).Skip(skip).Limit(limit).ToList();
 
             var jsonArray = new BsonArray(bsonList);
-            //var jsonWriterSettings = new JsonWriterSettings { OutputMode = JsonOutputMode.Strict };
-            var jsonWriterSettings = new JsonWriterSettings { OutputMode = JsonOutputMode.CanonicalExtendedJson};
+            var jsonWriterSettings = new JsonWriterSettings { OutputMode = JsonOutputMode.Shell};
             var json = jsonArray.ToJson(jsonWriterSettings);
 
             return json;
@@ -81,7 +80,7 @@ namespace MongoDB_ODC
             var aggregateResult = mongoService.AggregateCollection(collectionName, bsonPipeline);
 
             // Convert the result to JSON
-            var jsonWriterSettings = new JsonWriterSettings { OutputMode = JsonOutputMode.CanonicalExtendedJson };
+            var jsonWriterSettings = new JsonWriterSettings { OutputMode = JsonOutputMode.Shell };
             var jsonResult = aggregateResult.ToJson(jsonWriterSettings);
 
             return jsonResult;
@@ -99,7 +98,7 @@ namespace MongoDB_ODC
         {
             _handler = new MongoDBHandler(connectionString, databaseName);
             var bsonDocuments = _handler.GetDocuments(collectionName, filterJson);
-            var jsonWriterSettings = new JsonWriterSettings { OutputMode = JsonOutputMode.CanonicalExtendedJson };
+            var jsonWriterSettings = new JsonWriterSettings { OutputMode = JsonOutputMode.Shell };
             return bsonDocuments.ToJson(jsonWriterSettings);
         }
 
